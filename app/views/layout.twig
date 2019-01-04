@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+{% block header %}
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+    {% block meta_tags %}
+        <meta name="description" content="The HTML5 Herald">
+        <meta name="author" content="SitePoint">
+    {% endblock %}
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
+    {% block stylesheets %}
+    {% endblock %}
+</head>
+{% endblock %}
+<body class="body">
+    {% block body %}
+    {% endblock %}
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    {% block scripts %}
+    {% endblock %}
+</body>
+</html>
